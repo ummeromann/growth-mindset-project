@@ -19,25 +19,6 @@ File format conversion (CSV to Excel and vice versa)
 
 Download cleaned and transformed files
 
-🔧 Installation & Setup
-
-To run the project locally, follow these steps:
-
-1️⃣ Clone the Repository
-
-git clone https://github.com/your-repo/datasweeper-sterling-integrator.git
-cd datasweeper-sterling-integrator
-
-2️⃣ Install Dependencies
-
-Ensure you have Python installed, then run:
-
-pip install -r requirements.txt
-
-3️⃣ Run the Application
-
-streamlit run app.py
-
 📖 Usage Guide
 
 Upload Files: Drag and drop CSV or Excel files into the uploader.
@@ -62,13 +43,9 @@ Pandas (Data manipulation)
 
 We welcome contributions! Feel free to submit pull requests or report issues.
 
-📜 License
-
-This project is licensed under the MIT License.
-
 📩 Contact
 
-For questions or collaboration, reach out at your-email@example.com.
+For questions or collaboration, reach out at rummii.06@gmail.com.
 
 🚀 Transform Your Data with Ease!
 
