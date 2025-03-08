@@ -20,7 +20,7 @@ st.markdown(
 )
 
 # title and description
-st.title("Datasweeper Sterling Integrator By Umme Roman Syed")
+st.title("📀Datasweeper Sterling Integrator By Umme Roman Syed")
 st.title("Transform your files between CSV and Excel formats with built-in data cleaning and visualization creating the project for quarter 3!")
 
 # file uploader
@@ -39,11 +39,11 @@ if uploaded_files:
       continue
 
 # file details
-st.write("Preview the head of the Dataframe")
+st.write("🔍Preview the head of the Dataframe")
 st.dataframe(df.head())
 
 # data cleaning options
-st.subheader("Data Cleaning Options")
+st.subheader("💢Data Cleaning Options")
 if st.checkbox(f"Clean data for {file.name}"):
   col1, col2 = st.columns(2)
 
@@ -58,17 +58,17 @@ if st.checkbox(f"Clean data for {file.name}"):
       df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].mean())
       st.write("Missing values have been filled!")
   
-  st.subheader("Select Columns to Keep")
+  st.subheader("🎯Select Columns to Keep")
   columns = st.multiselect(f"choose columns for {file.name}", df.columns, default=df.columns)
   df = df[columns]
 
 # data visualization
-st.subheader("Data Visualization")
+st.subheader("📊Data Visualization")
 if st.checkbox(f"Show visualization for {file.name}"):
   st.bar_chart(df.select_dtypes(include="number").iloc[:, :2])
 
 # conversion options
-st.subheader("Conversion Options")
+st.subheader("🔄Conversion Options")
 conversion_type = st.radio(f"Convert {file.name} to:", ["CVS", "Excel"], key=file.name)
 if st.button(f"Convert{file.name}"):
   buffer = BytesIO()
