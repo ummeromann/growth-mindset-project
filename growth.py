@@ -3,6 +3,20 @@ import pandas as pd
 import os
 from io import BytesIO
 
+# custom css
+st.markdown(
+  """
+  <style>
+  .stApp{
+         background-color: black;
+         color: white;
+         }
+  </style>
+
+  """,
+  unsafe_allow_html=True
+)
+
 # Page config
 st.set_page_config(page_title="📀 Data Sweeper", layout="wide")
 
