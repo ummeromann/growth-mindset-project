@@ -6,26 +6,27 @@ from io import BytesIO
 # Page config
 st.set_page_config(page_title="📀 Data Sweeper", layout="wide")
 
-# Custom CSS styling
+# Custom CSS styling (no green, no white border)
 st.markdown(
     """
     <style>
     .stApp {
         background-color: #000000;
-        color: #00FFAA;
+        color: #DDDDDD;
     }
     h1, h2, h3, h4, h5 {
-        color: #00FFAA;
+        color: #DDDDDD;
     }
-    .stButton > button {
-        background-color: #00FFAA;
-        color: black;
-        font-weight: bold;
+    .stButton > button, .stDownloadButton > button {
+        background-color: #444444;
+        color: #DDDDDD;
+        border: none;
+        font-weight: 600;
+        padding: 0.6em 1.2em;
+        border-radius: 8px;
     }
-    .stDownloadButton > button {
-        background-color: #1DB954;
-        color: white;
-        font-weight: bold;
+    .stButton > button:hover, .stDownloadButton > button:hover {
+        background-color: #666666;
     }
     </style>
     """,
