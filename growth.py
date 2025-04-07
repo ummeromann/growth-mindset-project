@@ -17,17 +17,6 @@ st.markdown(
     h1, h2, h3, h4, h5 {
         color: #DDDDDD;
     }
-    .stButton > button, .stDownloadButton > button {
-        background-color: #444444;
-        color: #DDDDDD;
-        border: none;
-        font-weight: 600;
-        padding: 0.6em 1.2em;
-        border-radius: 8px;
-    }
-    .stButton > button:hover, .stDownloadButton > button:hover {
-        background-color: #666666;
-    }
     </style>
     """,
     unsafe_allow_html=True
