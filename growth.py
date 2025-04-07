@@ -6,22 +6,6 @@ from io import BytesIO
 # Page config
 st.set_page_config(page_title="📀 Data Sweeper", layout="wide")
 
-# Custom CSS styling (no green, no white border)
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #000000;
-        color: #DDDDDD;
-    }
-    h1, h2, h3, h4, h5 {
-        color: #DDDDDD;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # App title and description
 st.title("📀 DataSweeper - Sterling Integrator by Umme Roman Syed")
 st.markdown("### Transform your files between CSV and Excel formats with built-in data cleaning and visualization.")
